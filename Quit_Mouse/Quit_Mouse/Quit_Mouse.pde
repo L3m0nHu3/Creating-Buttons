@@ -1,6 +1,6 @@
 //Global Variables
 float quitY, quitX, quitHeight, quitWidth;
-color red=#D61616, grey=#B2B2B2, resetButtonColor=#FFFFFF, buttonFill=#E3E3E3; //Not night mode friendly colours
+color red=#D61616, orange=#FF9429, resetButtonColor=#FFFFFF, buttonFill=#E3E3E3; //Not night mode friendly colours
 //
 void setup() {
   size (500, 500);
@@ -23,7 +23,7 @@ void draw () {
   if (mouseX>quitX && mouseX<quitX+quitWidth && mouseY>quitY && mouseY<quitY+quitHeight) {
     buttonFill = red;
   } else {
-    buttonFill = grey;
+    buttonFill = orange;
   }//End Hover-Over
     fill(buttonFill); //2-colours to start, rememeber that night mode adds choice
     rect (quitY, quitX, quitHeight, quitWidth);
