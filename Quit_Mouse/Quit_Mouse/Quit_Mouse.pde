@@ -18,10 +18,12 @@ void setup() {
 //
 void draw () {
   rect (quitY, quitX, quitHeight, quitWidth);
+  println("X-Value", quitX, "\t",  mouseX, "\t", quitX+quitWidth, "\t\t Look at the middle value");
+  println("Y-Value", quitY, "\t",  mouseY, "\t", quitX+quitHeight, "\t\t Look at the middle value");
 }//End void draw
 //
 void keyPressed() {
- if (key==' ' || key=='q')  exit();
+  if (key==' ' || key=='q')  exit();
 }//End void keyPressed
 //
 void mousePressed() {
